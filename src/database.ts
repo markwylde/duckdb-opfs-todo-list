@@ -136,9 +136,11 @@ export function isOpfsSupported(): boolean {
  * @returns {duckdb.DuckDBBundle} Bundle configuration for DuckDB
  */
 function createDuckDbBundle(options: DatabaseOptions = {}): duckdb.DuckDBBundle {
+  // Use Vite's BASE_URL to ensure correct paths in production
+  const basePath = import.meta.env.BASE_URL;
   return {
-    mainModule: options.wasmModule || '/duckdb-eh.wasm',
-    mainWorker: options.workerScript || '/duckdb-browser-eh.worker.js',
+    mainModule: options.wasmModule || `${basePath}duckdb-eh.wasm`,
+    mainWorker: options.workerScript || `${basePath}duckdb-browser-eh.worker.js`,
   };
 }
 
