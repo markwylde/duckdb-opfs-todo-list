@@ -19,8 +19,6 @@
  * 4. Monitor debug output for troubleshooting
  * 5. Clear completed or all todos as needed
  * 
- * @author Your Name
- * @version 2.0.0
  */
 
 import { 

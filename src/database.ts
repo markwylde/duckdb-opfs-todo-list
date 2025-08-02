@@ -11,8 +11,6 @@
  * - Uses DuckDB WASM v1.29.1-dev269.0+ with native OPFS support
  * - Supports todo items with completed/incomplete state
  * 
- * @author Your Name
- * @version 2.0.0
  */
 
 import * as duckdb from '@duckdb/duckdb-wasm';
