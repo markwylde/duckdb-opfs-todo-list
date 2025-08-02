@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckDB OPFS Todo List</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DuckDB OPFS Todo List</h1>
+            <div class="status">
+                <span id="persistence-status">Checking...</span>
+                <span id="todo-count">0 todos</span>
+            </div>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Add a new todo item..." maxlength="200">
+            <button id="add-button">Add Todo</button>
+        </div>
+
+        <div class="todos-section">
+            <ul id="todos-list"></ul>
+        </div>
+
+        <div class="actions">
+            <button id="clear-completed-button" class="clear-completed-btn">Clear Completed</button>
+            <button id="clear-all-button" class="clear-all-btn">Clear All Todos</button>
+        </div>
+
+        <div class="debug">
+            <h3>Debug Info</h3>
+            <div id="debug-log"></div>
+        </div>
+    </div>
+
+    <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
