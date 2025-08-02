@@ -26,8 +26,6 @@ Open https://localhost:5173/ in your browser.
 
 **🌐 Live Demo**: https://markwylde.com/duckdb-opfs-todo-list/
 
-> **Note**: The GitHub Pages demo runs in **in-memory mode** because GitHub Pages doesn't provide the required COOP/COEP headers for OPFS functionality. For full OPFS persistence testing, run locally with `npm run dev`.
-
 ## Test Plan
 
 1. **Add Todo Items**: Enter text and click "Add Todo" or press Enter
