@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import mkcert from 'vite-plugin-mkcert';
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/duckdb-opfs-todo-list/' : '/',
   server: {
     https: true,
     headers: {
